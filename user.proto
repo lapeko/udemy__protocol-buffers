@@ -22,5 +22,12 @@ message User {
 }
 
 message UserList {
+    message Test {
+        enum TestEnum {
+            TEST_ENUM_1 = 0;
+            TEST_ENUM_2 = 1;
+        }
+        TestEnum test_enum = 1;
+    }
     repeated User users = 1;
 }
