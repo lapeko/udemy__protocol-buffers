@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example.eye;
+
+enum EyeColor {
+  EYE_COLOR_UNSPECIFIED = 0;
+  EYE_COLOR_BLUE = 1;
+  EYE_COLOR_BROWN = 2;
+}
+
+message Eye {
+  EyeColor color = 1;
+}
