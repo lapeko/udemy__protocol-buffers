@@ -6,6 +6,11 @@ enum Role {
     ROLE_ADMIN = 2;
 }
 
+/*
+    Comments are the same like for variety of program languages
+    Multiline comment
+*/
+// One line comment
 message User {
     uint32 id = 1;
     string name = 2;
