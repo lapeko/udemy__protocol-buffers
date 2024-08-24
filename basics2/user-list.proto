@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "same_level_message.proto";
+import "user.proto";
 
 message UserList {
     message Test {
@@ -10,4 +10,5 @@ message UserList {
         }
         TestEnum test_enum = 1;
     }
+    User user = 1;
 }
