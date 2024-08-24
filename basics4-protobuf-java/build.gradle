@@ -1,0 +1,31 @@
+plugins {
+    id "com.google.protobuf" version "0.9.4"
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'com.google.protobuf'
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:4.27.3'
+    }
+}
+
+dependencies {
+    implementation 'com.google.protobuf:protobuf-java:4.27.3'
+    implementation 'com.google.protobuf:protobuf-java-util:4.27.3'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
