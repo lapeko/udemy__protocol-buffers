@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "same_level_message.proto";
+
+message UserList {
+    message Test {
+        enum TestEnum {
+            TEST_ENUM_1 = 0;
+            TEST_ENUM_2 = 1;
+        }
+        TestEnum test_enum = 1;
+    }
+}

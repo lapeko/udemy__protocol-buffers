@@ -20,14 +20,3 @@ message User {
     repeated string phones = 6;
     Role role = 7;
 }
-
-message UserList {
-    message Test {
-        enum TestEnum {
-            TEST_ENUM_1 = 0;
-            TEST_ENUM_2 = 1;
-        }
-        TestEnum test_enum = 1;
-    }
-    repeated User users = 1;
-}
