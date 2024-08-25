@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package example.test;
+
+option go_package = "basics5-protobuf-go/proto";
+
+message Test {
+  uint32 id = 1;
+}
