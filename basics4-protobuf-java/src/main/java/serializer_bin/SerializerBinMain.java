@@ -1,4 +1,4 @@
-package io;
+package serializer_bin;
 
 import example.map.Maps;
 
@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class IOMain {
+public class SerializerBinMain {
     private static void writeToFile(Maps.KeyIdMap message)  throws IOException {
         FileOutputStream fos = new FileOutputStream("kei_id_map.bin");
         message.writeTo(fos);
