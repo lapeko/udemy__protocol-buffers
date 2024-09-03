@@ -1,4 +1,5 @@
 import proto.simple_pb2 as simple
+import proto.complex_pb2 as complex_proto
 
 
 def get_simple():
@@ -10,5 +11,15 @@ def get_simple():
     )
 
 
+def get_complex():
+    cmplx = complex_proto.Complex()
+    cmplx.dummy.id = 1
+    cmplx.dummy.name = "Blabla"
+    cmplx.dummies.add(id=2, name="Name 2")
+    cmplx.dummies.add(id=3, name="Name 3")
+    print(cmplx)
+
+
 if __name__ == '__main__':
     print(get_simple())
+    get_complex()

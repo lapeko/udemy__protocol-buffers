@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Dummy {
+  uint32 id = 1;
+  string name = 2;
+}
+
+message Complex {
+  Dummy dummy = 1;
+  repeated Dummy dummies = 2;
+}
