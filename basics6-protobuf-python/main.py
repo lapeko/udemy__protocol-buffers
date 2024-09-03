@@ -2,6 +2,7 @@ import proto.simple_pb2 as simple
 import proto.complex_pb2 as complex_proto
 import proto.enum_pb2 as enum_proto
 import proto.one_of_pb2 as one_of
+import proto.map_pb2 as map_proto
 
 
 def get_simple():
@@ -32,8 +33,16 @@ def get_one_of():
     return var
 
 
+def get_map():
+    var = map_proto.TestMap()
+    var.key_value_map[1] = "test1"
+    var.key_value_map[2] = "test2"
+    return var
+
+
 if __name__ == '__main__':
     # print(get_simple())
     # get_complex()
     # print(get_enum())
-    print(get_one_of())
+    # print(get_one_of())
+    print(get_map())
