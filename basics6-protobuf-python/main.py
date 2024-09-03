@@ -1,5 +1,6 @@
 import proto.simple_pb2 as simple
 import proto.complex_pb2 as complex_proto
+import proto.enum_pb2 as enum_proto
 
 
 def get_simple():
@@ -20,6 +21,11 @@ def get_complex():
     print(cmplx)
 
 
+def get_enum():
+    return enum_proto.EyeColor(eye_color=enum_proto.EYE_COLOR_GREEN)
+
+
 if __name__ == '__main__':
-    print(get_simple())
-    get_complex()
+    # print(get_simple())
+    # get_complex()
+    print(get_enum())

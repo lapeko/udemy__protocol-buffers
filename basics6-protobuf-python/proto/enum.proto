@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+enum EYE_COLOR {
+  EYE_COLOR_UNSPECIFIED = 0;
+  EYE_COLOR_BLUE = 1;
+  EYE_COLOR_GREEN = 2;
+}
+
+message EyeColor {
+  EYE_COLOR eye_color = 1;
+}
