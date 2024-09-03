@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "isSimple": true,
+  "name": "Some name",
+  "numbers": [
+    1,
+    2,
+    3,
+    5
+  ]
+}
