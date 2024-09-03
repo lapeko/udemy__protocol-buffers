@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message OneOf {
+  oneof test_field {
+    uint32 id = 1;
+    string message = 2;
+  }
+}

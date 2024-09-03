@@ -1,6 +1,7 @@
 import proto.simple_pb2 as simple
 import proto.complex_pb2 as complex_proto
 import proto.enum_pb2 as enum_proto
+import proto.one_of_pb2 as one_of
 
 
 def get_simple():
@@ -25,7 +26,14 @@ def get_enum():
     return enum_proto.EyeColor(eye_color=enum_proto.EYE_COLOR_GREEN)
 
 
+def get_one_of():
+    var = one_of.OneOf(id=1)
+    var.message = "message"
+    return var
+
+
 if __name__ == '__main__':
     # print(get_simple())
     # get_complex()
-    print(get_enum())
+    # print(get_enum())
+    print(get_one_of())
